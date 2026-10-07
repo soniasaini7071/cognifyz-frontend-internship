@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 25px;
+            background-color: #e8f0fe;
+            text-align: center;
+        }
+
+        /* Mobile Screen */
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .container {
+                width: 
